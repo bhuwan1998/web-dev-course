@@ -17,5 +17,13 @@
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "popper.js": "^1.12.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhuwan1998/git-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bhuwan1998/git-test/issues"
+  },
+  "homepage": "https://github.com/bhuwan1998/git-test#readme"
 }
