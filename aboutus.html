@@ -15,23 +15,30 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <!--Enclose the div in a container for a row or column for nav bar and same width as the web page-->
         <div class="container">
-            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
-            <ul class="navbar-nav mr-auto"> <!--right margin should be set as much as as possible-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <!-- toggle button for navbar-->
+                <!--navbar requires -->
+                <!-- another div #Navbar (basically an id) which is mentioned above-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">Ristorante Con Fusion</a>
+            <ul class="navbar-nav mr-auto">
+                <!--right margin should be set as much as as possible-->
                 <!-- active class helps us to show home as active in the nav bar-->
-                <li class="nav-item"> <a class="nav-link" href="./index.html"> Home </a>  </li> <!-- nav item helps us show list items as horizontal -->
-                <li class="nav-item active"> <a class="nav-link" href="./aboutus.html"> About </a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#"> Menu </a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#"> Contact </a> </li>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <li class="nav-item"> <a class="nav-link" href="./index.html"> Home </a> </li>
+                    <!-- nav item helps us show list items as horizontal -->
+                    <li class="nav-item active"> <a class="nav-link" href="#"> About </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#"> Menu </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#"> Contact </a> </li>
             </ul>
-
-            </div>
         </div>
-    
 
-
+        </div>
+        </div>
     </nav>
 
     <header class="jumbotron">
@@ -48,8 +55,13 @@
     </header>
 
     <div class="container">
-        <div>
-            <div>
+        <div class="row">
+            <!--ol for introducing breadcrumb-->
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html"> Home </a>  </li>
+                <li class="breadcrumb-item active"> About Us </li>
+            </ol>
+            <div class="col-12">
                <h2>About Us</h2>
                <hr>
             </div>
@@ -91,7 +103,7 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
