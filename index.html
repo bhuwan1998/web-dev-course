@@ -25,14 +25,17 @@
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <!--Enclose the div in a container for a row or column for nav bar and same width as the web page-->
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <!-- navbar - toggler class used to toggle collapse - data toggle ="collapse" 
+            it is used to show or hide content -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"> <!-- using the navbar id from div class below to toggle navbar for extra small sizes-->
                 <!-- toggle button for navbar-->
                 <!--navbar requires -->
                 <!-- another div #Navbar (basically an id) which is mentioned above-->
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#"> <img src="images/img/logo.png" height="30" width="41"></a>
-            <div class="collapse navbar-collapse" id="Navbar">
+            <div class="collapse navbar-collapse" id="Navbar">  <!-- collapse class used again in the div here, 
+                navbar inside the div will be collapsed for extra small screensizes and the button triggers the collapse-->
                 <ul class="navbar-nav mr-auto">
                     <!--right margin should be set as much as as possible-->
                     <!-- active class helps us to show home as active in the nav bar-->
